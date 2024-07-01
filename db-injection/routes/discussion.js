@@ -12,7 +12,7 @@ router.get('/discussion', async function (req, res) {
   let filter = '';
 
   if (req.query.author) {
-    filter = `WHERE author = "${req.query.author}"`; 
+    filter = `WHERE author = "${req.query.author}"`; //X"; DROP TABLE comments; SELECT * FROM comments WHERE author = "Y
   }
 
   const query = `SELECT * FROM comments ${filter}`;
