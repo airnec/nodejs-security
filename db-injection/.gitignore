@@ -1,3 +1,3 @@
 .DS_Store
 node_modules
-echo ".database.js" >> .gitignore
+database.js
